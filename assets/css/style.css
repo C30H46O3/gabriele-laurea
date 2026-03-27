@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0b0f1a;
+  color: white;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 80px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.logo {
+  width: 720px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+.progress {
+  background: #222;
+  border-radius: 20px;
+  margin: 20px 0 10px;
+  overflow: hidden;
+}
+
+.bar {
+  width: 40%;
+  background: #2f6cff;
+  padding: 10px;
+  border-radius: 20px;
+  transition: width 0.2s ease;
+  white-space: nowrap;
+}
+
+.slider-wrap {
+  margin: 10px 0 20px;
+}
+
+.slider {
+  width: 100%;
+  max-width: 500px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: 2px solid #2f6cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: #2f6cff;
+}
+
+.payments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.payment-logo {
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 56px 16px;
+  }
+
+  .logo {
+    width: 600px;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .bar {
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 14px;
+  }
+
+  .logo {
+    width: 528px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px 20px;
+  }
+
+  .payments {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .payment-logo {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+  }
+}
